@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  const profile = {
+    name: "suyog",
+    city: "pune",
+  };
+
+  // Add new properties
+  // 1st way
+  profile.country = "India";
+  // 2nd Way
+  profile["nationality"] = "Indian";
+
+  const key = "isActive";
+  profile.key = true;
+  profile[key] = false; // profile["isActive"] = true
+
+  profile[1] = "Rahul";
+
+  // Delete a property
+  delete profile.city;
+  delete profile.country;
+  delete profile["1"];
+
+  // Update a property
+  profile.name = "New Name";
+  profile.name = "New Name2";
+  profile.name = "New Name3";
+  profile.name = "New Name5";
+  profile.name = "New Name4";
+
+  // Read the object property & entire object
+  console.log("@AJ profile: ", profile);
+</script>
